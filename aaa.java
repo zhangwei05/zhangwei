@@ -44,6 +44,16 @@ public class Aaa {
     }
   }
 
+  // 这是我加的部分 magaofei
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
   private boolean isElementPresent(By by) {
     try {
       driver.findElement(by);
